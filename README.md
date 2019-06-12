@@ -1,1 +1,3 @@
 # example-maven-project
+
+hi
