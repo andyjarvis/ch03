@@ -40,12 +40,12 @@ pipeline {
               unstash 'build-test-artifacts'
               def server = Artifactory.server 'artifactory'
               def uploadSpec = """{
-                Â "files": [
-                  Â  Â {
-                    Â  Â  Â "pattern": "target/*.jar",
-                    Â  Â  Â "target": "example-repo-local/${BRANCH_NAME}/${BUILD_NUMBER}/"
-                    Â  Â }
-                    Â ]
+                 "files": [
+                      {
+                          "pattern": "target/*.jar",
+                          "target": "example-repo-local/${BRANCH_NAME}/${BUILD_NUMBER}/"
+                        }
+                      ]
                   }"""
                   server.upload(uploadSpec)
                 }
