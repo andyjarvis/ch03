@@ -47,6 +47,7 @@ pipeline {
                        }
                      ]
                   }"""
+                  server.upload(uploadSpec)
                 }
 
               }
