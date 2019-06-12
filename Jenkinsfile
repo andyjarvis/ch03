@@ -43,7 +43,7 @@ pipeline {
                 "files": [
                   {
                     "pattern": "target/*.jar",
-                     "target": "example-repo-local/${BRANCH_NAME}/${BUILD_NUMBER}/"
+                    "target": "example-repo-local/${BRANCH_NAME}/${BUILD_NUMBER}/"
                   }
                 ]
               }"""
